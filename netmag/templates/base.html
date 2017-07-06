@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--<link rel="stylesheet" type="text/css" href="/static/style.css">-->
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Spectral" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+<title>
+{% block title %}{% endblock %}
+</title>
+</head>
+<body>
+<div class="container">
+{% block content %}
+{% endblock %}
+
+<footer>
+	<div class="row">
+		<p class="text-center">&copy; Alexander King 2017</p>
+	</div>
+</footer>
+</div>
+	<script src="/static/js/jquery-3.2.1.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+</body>
+</html>

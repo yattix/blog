@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block title %}{{post.title}}{% endblock %}
+
+{% block content %}
+<div class="row">
+<article>
+	<header>
+			<h1> {{post.title}} </h1>
+			<p>
+			Posted by {{post.author}} on
+			<time datetime="{{post.created|date:"c"}}">
+			{{post.created|date}}
+			</time>
+			</p>
+	</header>
+	<p class="lead">
+	{{post.description}}
+	</p>
+{{post.content|safe}}
+</article>
+</div>
+<div class="row">
+	<p><a href="/">&laquo; Back to index</a></p>
+</div>
+
+{% endblock %}
